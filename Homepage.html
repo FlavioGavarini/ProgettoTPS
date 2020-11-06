@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Homepage.css">
+</head>
+
+<div id="pagina" > 
+    <div id="superiore">
+	    <header id="header" align="center">
+	    	<h1>HOMEPAGE</h1>
+	    	<p><img  src="https://logodix.com/logo/488905.png" height="20%" width="20%"/></p>
+            <nav>
+               <a class="navigation" href="Luca.html">Corso Html</a>
+               <a class="navigation" href="Pietro.html">Corso css</a>
+               <a class="navigation" href="">Corso Javascript </a>
+            </nav>  
+    	</header>
+
+	
+		<div class="contenitore clearfix">
+			
+			<div class="box">
+			     <div class="titolo">
+					<h2>Corso HTML</h2> 
+				 </div>
+				
+				<div class="half">
+                  <p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+				  </p>
+				</div>
+			</div>
+				
+			<div class="box">
+				<div class="titolo">
+				   <h2>Corso CSS</h2> 
+				</div>
+			   
+			   <div class="half">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+			   </div>
+		   </div>
+
+			<div class="box">
+				
+				<div class="titolo">
+					<h2>Corso JAVASCRIPT</h2> 
+				</div>
+				
+				<div class="half">
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+					</p>
+				</div>
+				
+			</div>
+		</div>
+		
+	    <aside id="sidebar">
+			<nav>
+				<p>
+					<a href="Luca.html">Corso Html</a>
+				</p>
+				<p>
+					<a href="Pietro.html">Corso css</a>
+				</p>
+				<a href="">Corso Javascript </a>
+			 </nav>
+		</aside>
+	</div>
+	
+	<footer class="separatore">
+		<p></p>
+	</footer>
+	<div>
+
+	</div>
+	<div id="Contenuto" align="center">
+		<h2>Presentazione azienda</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+		</p>
+	</div>
+	<div id="Contenuto">
+		<table id="tab" border="1" align="center">
+			<p align="center">TABELLA CORSI</p>
+			<tbody><tr><th>CORSO</th><th>NUMERO ORE</th></tr>
+                <tr><td>HTML</td><td>35</td></tr>
+                <tr><td>CSS</td><td>27</td></tr>
+                <tr><td>JAVASCRIPT</td><td>42</td></tr>
+                <tr><td>TOTALE</td><td id="totale"></td></tr>
+            </tbody>
+        </table>
+        <script>
+        
+            var table = document.getElementById("tab");
+            var cells = table.getElementsByTagName("td");
+            var tot = 0;
+            for (var i = 0; i < (cells.length -1); i++) 
+            {
+                var v = cells[i].textContent;
+                if (! isNaN(v))  
+                {
+                    v = parseInt(v); // parseInt converte in numeri ma non ritorno un valore booleano testabile nel IF
+                    tot = tot + v;
+                }
+            }
+            document.getElementById("totale").textContent = tot;
+		</script>
+		<footer class="separatore">
+
+			<div align="center">
+				<h2>CONTATTI</h2>
+				<p>Flavio: Flavio.gavarini@issgreppi.it</p>
+				<p>Luca : Luca.Motta@issgreppi.it</p>
+				<p>Pietro: Pietro.Spreafico@issgreppi.it</p>
+				<p>Raouf: Rauof.Namane@issgreppi.it</p>
+			</div>
+			
+		</footer>
+
+		</table>
+	</div>
+</div>
