@@ -1,0 +1,117 @@
+
+body {
+	font: 1em/150% Arial, Helvetica, sans-serif;
+	color: black;
+}
+a {
+	color: #669;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	font: bold 36px/100% Arial, Helvetica, sans-serif;
+}
+
+
+#pagina {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+	background: white;
+}
+
+.navigation
+{
+	font-size: x-large;
+}
+#header {
+	height: 220px;
+}
+#content {
+	width: 600px;
+	float: left;
+}
+#sidebar {
+	width: 260px;
+	float: right;
+}
+#footer {
+	clear: both;
+}
+#sidebar
+{
+	font-size: large;
+	width: 15%;
+}
+.box{
+	width:50%;
+	height: 100%;
+	padding: 0px;
+	
+	margin: 0;
+	
+	float:left;
+	
+	display: flex;
+    flex-direction: column;
+	
+}
+.half
+{
+    display: table-row;
+	height: 95%;
+	padding: 15px;
+	border: solid black 2px;
+	margin: 0;
+	
+	float: inline-start;
+	
+	
+}
+.titolo
+{
+	display: table-row;
+	padding: 15px;
+	height:15%;
+	border: 2px solid black;
+	margin: 0;
+	box-sizing: border-box;
+    float: left;
+	
+}
+.contenuto
+{
+	 margin-top: 15px;
+	 position: absolute;
+	 bottom: 1000px;
+	 width: 100%;
+	 border: 1px black;
+	 
+}
+.separatore
+{
+	clear: both;
+	border: solid 1px  transparent;
+}
+.inferiore
+{
+ margin-top: 15px;
+}
+.contenitore
+{
+	position: relative;
+	width: 70%;
+	border: 5px solid black;
+	margin-bottom: 30px;
+}
+
+
+
+#header, #content, #sidebar {
+	margin-bottom: 5px;
+}
+#pagewrap, #header, #content, #sidebar, #footer {
+	border: solid 1px #ccc;
+}
