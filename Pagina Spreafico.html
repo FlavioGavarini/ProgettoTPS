@@ -1,0 +1,95 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Sito web in comune</title>
+    
+    </head>
+    
+    <body>
+    <div id="pagina"> 
+        
+        <img src="python logo.png" width="960" height="400">
+
+        <nav>    
+            <ul>
+                <li><link rel="stylesheet" type="text/css" href="css1.css"></li>
+               <li><a href="Homepage.html">Homepage</a></li>			
+                <li><a href="PaginaMotta.html">PaginaMotta</a></li>
+                <li><a href="PaginaSpreafico.html">PaginaSpreafico</a></li>
+            </ul>
+        </nav>
+
+        <header id="header">
+            <h1>Presentazione Del Corso</h1>
+            <p>In questo corso vedremo come affrontare i primi passi con il linguaggio di programmazione python.</p>
+        </header>
+
+        <div id="content">
+            <h2>Contenuto delle lezioni</h2>
+        </div>
+        
+        <div class="contenitore clearfix">
+            <div class="box">
+                <p>
+                Lezione 1
+                </p>
+                <p>
+                Nella prima del nostro corso python, ti inesgneremo a installare python.
+                </p>
+            </div>
+            <div class="box">
+                <p>
+                Lezione 2
+                </p>
+                <p>
+                Nella seconda lezione del nostro corso python, ti insegneremo ad usare python.
+                </p>
+            </div>
+            <div class="box">
+                <p>
+                Lezione 3
+                </p>
+                <p>
+                Nella terza lezione del nostro corso python, ti insegneremo ad usare i metodi in python.
+                </p>
+            </div>
+            <div class="box">
+                <p>
+                Lezione 4
+                </p>
+                <p>
+                Nella quarta lezione del nostro corso python, ti insegneremo ad usare i grafici su python.
+                </p>
+            </div>
+        </div>
+
+        <p>
+        NON CI SONO BUG
+        </p>
+         <table id="tab" border="1" class="center">
+            <tbody><tr><th>Lezioni</th><th>Ore</th></tr>
+            <tr><td>07/11/20</td><td>4</td></tr>
+            <tr><td>14/11/20</td><td>8</td></tr>
+            <tr><td>21/11/20</td><td>6</td></tr>            
+            <tr><td>28/11/20</td><td>6</td></tr>
+            <tr><td>TOTALE</td><td id="totale"></td></tr>
+            <script>
+        
+                var table = document.getElementById("tab");
+                var cells = table.getElementsByTagName("td");
+                var tot = 0;
+                for (var i = 0; i < (cells.length -1); i++) 
+                {
+                    var v = cells[i].textContent;
+                    if (! isNaN(v))  // isNaN valuta se può essere convertito in numero ma non lo converte
+                    {
+                        v = parseInt(v); // parseInt converte in numeri ma non ritorno un valore booleano testabile nel IF
+                        tot = tot + v;
+                    }
+                }
+                document.getElementById("totale").textContent = tot;
+            </script>
+            
+         </table>
+    
+    </div>
+    </body>
