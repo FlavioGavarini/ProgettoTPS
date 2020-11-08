@@ -1,22 +1,36 @@
 <head>
     <meta charset="UTF-8">
-    <title>Sito web in comune</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Python Course</title>
+    <link rel="stylesheet" type="text/css" href="PaginaSreafico.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     
     <body>
+        <div class="topnav" id="myTopnav">
+            <a href="Homepage.html">Home</a>
+            <a href="Pagina Spreafico.html" class="active">Python Course</a>
+            <a href="Tps.html">Java Course</a>
+            <a href="#Contatti">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
     <div id="pagina"> 
         
-        <img src="python logo.png" width="960" height="400">
 
-        <nav>    
-            <ul>
-                <li><link rel="stylesheet" type="text/css" href="css1.css"></li>
-               <li><a href="Homepage.html">Homepage</a></li>			
-                <li><a href="PaginaMotta.html">PaginaMotta</a></li>
-                <li><a href="PaginaSpreafico.html">PaginaSpreafico</a></li>
-            </ul>
-        </nav>
+        <header  class="clearfix" id="header" align="center">
+            <h1>CORSO DI PYTHON</h1>        
+            
+            <p><img src="python logo.png" width="140" height="90" ></p>
+
+            <nav>                
+               <a class="navigation" href="Homepage.html">Homepage</a>
+               <a class="navigation" href="#">Corso Python</a>
+               <a class="navigation" href="Tps.html">Corso Java</a>
+            </nav>  
+        </header>
 
         <header id="header">
             <h1>Presentazione Del Corso</h1>
@@ -24,49 +38,30 @@
         </header>
 
         <div id="content">
-            <h2>Contenuto delle lezioni</h2>
+            <h2>Contenuto delle lezioni:</h2>
         </div>
         
-        <div class="contenitore clearfix">
-            <div class="box">
-                <p>
-                Lezione 1
-                </p>
-                <p>
-                Nella prima del nostro corso python, ti inesgneremo a installare python.
-                </p>
-            </div>
-            <div class="box">
-                <p>
-                Lezione 2
-                </p>
-                <p>
-                Nella seconda lezione del nostro corso python, ti insegneremo ad usare python.
-                </p>
-            </div>
-            <div class="box">
-                <p>
-                Lezione 3
-                </p>
-                <p>
-                Nella terza lezione del nostro corso python, ti insegneremo ad usare i metodi in python.
-                </p>
-            </div>
-            <div class="box">
-                <p>
-                Lezione 4
-                </p>
-                <p>
-                Nella quarta lezione del nostro corso python, ti insegneremo ad usare i grafici su python.
-                </p>
-            </div>
+        
+        <div id="lezioni">
+            <table id="prescorso">
+            <tr ><th>Lezione 1</th></tr>
+            <tr><td>Nella prima del nostro corso python, ti insegneremo a installare python.</td></tr>
+            
+            <tr ><th>Lezione 2</th></tr>
+            <tr><td>Nella seconda lezione del nostro corso python, ti insegneremo ad usare python.</td></tr>
+
+            <tr ><th>Lezione 3</th></tr>
+            <tr><td>Nella terza lezione del nostro corso python, ti insegneremo ad usare i metodi in python.</td></tr>
+
+            <tr ><th>Lezione 4</th></tr>
+            <tr><td>Nella quarta lezione del nostro corso python, ti insegneremo ad usare i grafici su pyth</td></tr>
+        </table>
+
         </div>
 
-        <p>
-        NON CI SONO BUG
-        </p>
-         <table id="tab" border="1" class="center">
-            <tbody><tr><th>Lezioni</th><th>Ore</th></tr>
+        
+         <table id="tab" border="1" class="center" align="center">
+            <tr><th>Lezioni</th><th>Ore</th></tr>
             <tr><td>07/11/20</td><td>4</td></tr>
             <tr><td>14/11/20</td><td>8</td></tr>
             <tr><td>21/11/20</td><td>6</td></tr>            
@@ -87,9 +82,31 @@
                     }
                 }
                 document.getElementById("totale").textContent = tot;
+
+                function myFunction() {
+					var x = document.getElementById("myTopnav");
+					if (x.className === "topnav") {
+						x.className += " responsive";
+					} else {
+						x.className = "topnav";
+					}
+				}
             </script>
             
          </table>
-    
+         <footer class="separatore">
+			<p></p>
+		</footer>
+         <footer class="separatore">
+	
+            <div align="center" id="Contatti">
+                <h1>CONTATTACI</h1>
+                <p>Flavio: Flavio.gavarini@issgreppi.it</p>
+                <p>Luca : Luca.Motta@issgreppi.it</p>
+                <p>Pietro: Pietro.Spreafico@issgreppi.it</p>
+                <p>Raouf: Raouf.Namane@issgreppi.it</p>
+            </div>
+            
+        </footer>
     </div>
     </body>
