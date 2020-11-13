@@ -1,3 +1,4 @@
+
 <!-- <!DOCTYPE html> -->
 <html>
 <head>
@@ -7,30 +8,21 @@
 <link rel="stylesheet" type="text/css" href="Homepage.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--importo l'icona del menù-->
 </head>
+
 <body>
 	
-	<div class="topnav" id="myTopnav">
+	<div id="navbar" class="topnav">
 		<a href="#" class="active">Home</a>
-		<a href="Pagina Spreafico.html">Python Course</a>
-		<a href="Tps.html">Java Course</a>
+		<a href="Pagina Spreafico.html">Python</a>
+		<a href="Tps.html">Java</a>
 		<a href="#Contatti">Contact Us</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!--"href="javascript:void(0);" è uno schema uri e permette l'icona delle tre barre-->
-		  <i class="fa fa-bars"></i>
-		</a>
 	  </div>
-	  
-	<div id="pagina"  > 
+	<div id="pagina"> 
 	      
 		<div id="superiore">
-			<header  class="clearfix" id="header" align="center" style="border-color: #383838;">
+			<header  class="clearfix" id="header" align="center" style="border: #383838;">
 				<h1>HOMEPAGE</h1>
-				<p><img  src="https://logodix.com/logo/488905.png" height="20%" width="20%"/></p>
-				<nav>
-					
-				   <a class="navigation" href="Homepage.html">Homepage</a>
-				   <a class="navigation" href="Pagina Spreafico.html">Corso Python</a>
-				   <a class="navigation" href="Tps.html">Corso Java</a>
-				</nav>  
+				<div id="immagine"><img  src="https://logodix.com/logo/488905.png" height="20%" width="20%"/></p>
 			</header>
 	
 		     
@@ -38,49 +30,41 @@
 				
 				<div class="box" style="color: blueviolet;">
 					 <div class="clearfix" align="center" style="border-style: solid;color: #383838;">
-						<h2><strong>JAVA</strong></h2> 
+						<h2><a href="Tps.html">CORSO JAVA</a></h2> 
 					 </div>
 					
 					<div class="half" align="center" >
-						<p class="clearfix">- Lezione 1</p>
-						<p class="clearfix">- Lezione 2</p>
-						<p class="clearfix">- Lezione 3</p>
-						<p class="clearfix">- Lezione 4</p>
+						<p class="clearfix">-AMBIENTE DI SVILUPPO</p>
+						<p class="clearfix">-TIPI DI DATO</p>
+						<p class="clearfix">-ELEMENTI IN JAVA</p>
+						<p class="clearfix">-CICLI</p>
 					</div>
 				</div>
 					
 				<div class="box">
 					
 					<div class="clearfix" align="center" style="border-style: solid;color: #383838;">
-						<h2 >Corso PYTHON</h2> 
+						<h2 ><a href="Pagina Spreafico.html">CORSO PYTHON</a></h2> 
 					</div>
 					
 					<div class="half" align="center"  >
-						<p class="clearfix">- Lezione 1</p>
-						<p class="clearfix">- Lezione 2</p>
-						<p class="clearfix">- Lezione 3</p>
-						<p class="clearfix">- Lezione 4</p>
+						<p class="clearfix">-AMBIENTE DI SVILUPPO</p>
+						<p class="clearfix">-ELEMENTI DEL LINGUAGGIO</p>
+						<p class="clearfix">-ALTRI ELEMENTI</p>
+						<p class="clearfix">-LIVELLO PROFESSIONALE</p>
 					</div>
 					
 				</div>
 			</div>
 			
-			<aside id="sidebar" >
-				<div class="clearfix"  >
-					<nav>
-						<ul>
-							<li>
+			<aside id="sidebar"  style="border: #383838;" >
+				<div class="clearfix" align="center" style="width: 50%; margin: auto;">
 								<a href="Homepage.html">Homepage</a>
-							</li>
-							<li>
-								<a href="Tps.html">Corso Java</a>
-							</li>
-							<li>
 								<a href="Pagina Spreafico.html">Corso Python</a>
-							</li>	  	
-						</ul>
-					</nav>
-
+								<a href="Tps.html">Corso Java</a>
+								<a href="#azienda">Azienda</a>
+								<a href="#tab">Tabella Corsi</a>	
+								<a href="#Contatti">Contatti</a>	
 				</div>
 			</aside>
 		</div>
@@ -88,62 +72,36 @@
 		<footer class="separatore">
 			<p></p>
 		</footer>
-		<div>
-	
+		<div align="center">
+			<h2 class="clearfix" id="azienda">La nostra azienda</h2>	
 		</div>
 		<div id="Contenuto" align="center">
-			<h2 class="clearfix">Presentazione azienda</h2>
-			<p class="clearfix">
+			<p class="clearfix">ProjectTPS è la prima scuola online in ambito coding dove poter imparare a programmare con i principali linguaggi di programmazione, anche da zero.
+				Grazie ai percorsi formativi verrai guidato passo passo fino ad apprendere le competenze delle principali figure professionali, come programmatore web (front-end, back-end o full stack), mobile developer, web designer, ui/ux designer, data scientist e molto altro.Se sei un professionista del settore, grazie a ProjectTPS potrai ottenere nuove competenze che ti aiuteranno ad acquisire nuovi clienti e se sei un'azienda, grazie ai piani corporate, avrai accesso completo e senza limitazioni a tutto il pacchetto formativo per ogni singolo dipendente		
+				Lezioni brevi e pratiche studiate per un pubblico di lavoratori. Accedi a tutti i corsi di ProjectTPS con un unico abbonamento da computer, smartphone o tablet: quando vuoi, dove vuoi, decine di corsi, migliaia di video lezioni, quiz ed esercitazioni completamente in italiano a tua disposizione.
 				La nostra grande azienda ti permette di lavorare in modo divertente ed efficace. Con i nostri corsi e le varie informazioni messe a disposizione aiutiamo i nostri clienti a raggiungere le proprie ambizioni e i loro obbiettivi. Unisciti a noi che siamo la vera Trap in Italia, puoi contattarci con le email che trovi a fine pagina! Saresti davvero uno stupido a non farlo, infondo non tutti i team dispongono di un entourage del genere.. abbiamo pure ER FLEXBOI!!!!!
 			</p>
 		</div>
-		<div id="Contenuto">
+		<div align="center">
+			<h2>TABELLA CORSI</h2>
 			<table id="tab" border="1" align="center">
-				<h2 align="center">TABELLA CORSI</h2>
+				
 				<tbody><tr><th>CORSO</th><th>NUMERO ORE</th></tr>
-					<tr><td>JAVA</td><td>8</td></tr>
+					<tr><td>JAVA</td><td>20</td></tr>
 					<tr><td>PYTHON</td><td>24</td></tr>
 					<tr><td>TOTALE</td><td id="totale"></td></tr>
 				</tbody>
 			</table>
-			<script>
-			
-				var table = document.getElementById("tab");
-				var cells = table.getElementsByTagName("td");
-				var tot = 0;
-				for (var i = 0; i < (cells.length -1); i++) 
-				{
-					var v = cells[i].textContent;
-					if (! isNaN(v))  
-					{
-						v = parseInt(v); // parseInt converte in numeri ma non ritorno un valore booleano testabile nel IF
-						tot = tot + v;
-					}
-				}
-				document.getElementById("totale").textContent = tot;
-
-
-
-
-				function myFunction() {
-					var x = document.getElementById("myTopnav");
-					if (x.className === "topnav") {
-						x.className += " responsive";
-					} else {
-						x.className = "topnav";
-					}
-				}
-			</script>
+			<script src="scriptProj.js">
+			</script>		
 			<footer class="separatore">
-	
-				<div align="center" id="Contatti">
-					<h2>CONTATTACI</h2>
+
+					<div align="center" id="Contatti">
+					<h2><a href="https://www.istitutogreppi.edu.it/">CONTATTACI</a></h2>
 					<p>Flavio: Flavio.gavarini@issgreppi.it</p>
 					<p>Luca : Luca.Motta@issgreppi.it</p>
 					<p>Pietro: Pietro.Spreafico@issgreppi.it</p>
-					<p>Raouf: Raouf.Namane@issgreppi.it</p>
-				</div>
-				
+					<p>Raouf: Raouf.Namane@issgreppi.it</p>				
 			</footer>
 	
 			</table>
